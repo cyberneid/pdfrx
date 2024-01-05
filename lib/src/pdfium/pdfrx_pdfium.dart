@@ -355,7 +355,7 @@ class PdfPagePdfium extends PdfPage {
               params.fullWidth,
               params.fullHeight,
               0,
-              0,
+              1, // render annotations
             );
             pdfium.FPDFBitmap_Destroy(bmp);
           },
